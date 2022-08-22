@@ -88,25 +88,30 @@
                     <h1 class="font-bold text-white text-3xl text-center mt-5">Budget</h1>
                     <div class="mt-7">
                         <p class="text-white inline pl-4 text-xl">Per Player : </p>
-                        <input class="w-5/12 ml-1 bg-transparent border-2 text-white" type="text">
+                        <input id="player-cost-field" class="w-5/12 ml-1 bg-transparent border-2 text-white"
+                            type="text">
                     </div>
-                    <button
+                    <button id="btn-calc"
                         class="bg-blue-500 hover:bg-amber-800	 my-6  mx-1 py-2 px-20 rounded-md text-white text-xl font ">Calculate</button>
 
-                    <h1 class="text-white pl-1 text-xl  ">Player Expenses: <span class="pl-2"> $0000</span></h1>
+                    <h1 class="text-white text-xl">Player Expenses: $ <span id="player-cost-total" class="">0000</span>
+                    </h1>
                     <div class="mt-7">
                         <p class="text-white inline pl-4 text-xl">Manger : </p>
-                        <input class="w-5/12 ml-7 bg-transparent border-2 text-white" type="text">
+                        <input id="manager-cost-field" class="w-5/12 ml-7 bg-transparent border-2 text-white"
+                            type="text">
                     </div>
                     <div class="mt-7">
                         <p class="text-white inline pl-4 text-xl">Coach : </p>
-                        <input class="w-5/12 ml-10 bg-transparent border-2 text-white" type="text">
+                        <input id="coach-field" class="w-5/12 ml-10 bg-transparent border-2 text-white" type="text">
                     </div>
-                    <button
+                    <button id="btn-total"
                         class="bg-blue-500 hover:bg-amber-800	 my-6 mx-1 py-2 px-14 rounded-md text-white text-xl font ">Calculate
                         Total</button>
 
-                    <h1 class="text-white pl-4 text-xl  ">Total: <span class="pl-28">$0000</span></h1>
+                    <h1 class="text-white pl-3 text-xl  ">Total: <span class="pl-20">$ </span><span id="total-cost"
+                            class="">0000</span>
+                    </h1>
                 </div>
             </div>
             <div class="mt-10">
