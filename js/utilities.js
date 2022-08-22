@@ -23,9 +23,10 @@ function playerSelection(playerNameId, btnName) {
         const callBtn = document.getElementById(btnName);
         callBtn.setAttribute('disabled', true);
         callBtn.style.backgroundColor = 'darkgray';
+        callBtn.setAttribute('title', 'Player is already selected');
     }
     else {
-        alert('You can selcet only five player');
+        alert("You can't selcet more than five player");
     }
 
 }
